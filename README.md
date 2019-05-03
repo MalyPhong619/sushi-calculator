@@ -25,6 +25,8 @@ _Sushi Go-around Calculator allows the user to add the amount per plate color th
 
 ## Component Tree Diagram
 
+<img src="src/assets/images/component-tree.png">
+
 ## Tools/Resources
 
 * Firebase
