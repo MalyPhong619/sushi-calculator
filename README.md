@@ -20,9 +20,15 @@ _Sushi Go-around Calculator allows the user to add the amount of color plates th
 
 - [ ] Pin location on map
 - [ ] Display "Happy Hour" information
-- [ ] Functions to calculate total during "Happy Hour"
+- [ ] Functions to calculate total during "Happy Hour" (custom/automatic default tips)
 
 ## Resources
 
 * Firebase
 * Google API
+
+## Frameworks, Libraries, Languages
+
+* HTML
+* CSS
+* React
