@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'
 
-function Home(){
+function Display(){
   const Something = styled.h1`
   @keyframes pulse {
     0%{color: hotpink}
@@ -23,4 +23,4 @@ function Home(){
   )
 }
 
-export default Home;
+export default Display;
