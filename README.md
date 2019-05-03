@@ -3,7 +3,7 @@
 
 ## Description
 
-_Sushi Go-around Calculator allows the user to add the amount of color plates they've grabbed from the conveyor belt and calculate their total._
+_Sushi Go-around Calculator allows the user to add the amount per plate color they've grabbed from the conveyor belt. The application will then calculate the total price and default tip total. The user will also be allowed to customize a tip percentage._
 
 ## MVP
 
@@ -22,7 +22,7 @@ _Sushi Go-around Calculator allows the user to add the amount of color plates th
 - [ ] Display "Happy Hour" information
 - [ ] Functions to calculate total during "Happy Hour" (custom/automatic default tips)
 
-## Resources
+## Tools/Resources
 
 * Firebase
 * Google API
