@@ -33,6 +33,25 @@ _Sushi Go-around Calculator allows the user to add the amount per plate color th
 * CSS
 * React
 
+## Setup on OSX
+
+* Install Node.js
+* Install karma-cli globally:
+  * `$ npm install -g karma-cli`
+
+* Clone project into desktop
+  * `$ git clone https://github.com/MalyPhong619/sushi-calculator.git`
+
+###### Inside root directory
+
+* Install Dependecies
+  * `$ npm install`
+
+* To build and start the dev server
+  * `$ npm run start`
+
+
+
 ## Support and contact details
 
 _If there are any questions please feel free to email [Maly Phongsavanh](mailto:maly@maly.dev)_
