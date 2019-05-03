@@ -32,3 +32,12 @@ _Sushi Go-around Calculator allows the user to add the amount per plate color th
 * HTML
 * CSS
 * React
+
+## Support and contact details
+
+_If there are any questions please feel free to email [Maly Phongsavanh](mailto:maly@maly.dev)_
+
+
+### License
+_This software is licensed under the MIT license_*
+Copyright (c) 2019 **_Maly Phongsavanh_**
