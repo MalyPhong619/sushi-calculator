@@ -64,5 +64,5 @@ _If there are any questions please feel free to email [Maly Phongsavanh](mailto:
 
 
 ### License
-_This software is licensed under the MIT license_*
+_This software is licensed under the MIT license_
 Copyright (c) 2019 **_Maly Phongsavanh_**

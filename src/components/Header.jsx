@@ -4,10 +4,11 @@ import { Link } from 'react-router-dom';
 function Header(){
   return(
     <div>
-      <h2>THIS IS A HEADER</h2>
       <Link to='/'>Home</Link>
+      <Link to='/admin'>Admin</Link>
+      <Link to='/map'>Map</Link>
     </div>
   )
 }
 
-export default Header
+export default Header;
