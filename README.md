@@ -53,7 +53,10 @@ _Sushi Go-around Calculator allows the user to add the amount per plate color th
 * Install Dependecies
   * `$ npm install`
 
-* To build and start the dev server
+* To build
+  * `$ npm run build`
+
+* To start the dev server
   * `$ npm run start`
 
 
