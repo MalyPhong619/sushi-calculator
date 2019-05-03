@@ -2,7 +2,6 @@ import React from 'react';
 
 function ColorPlates() {
 
-
   return(
     <div>
       <style jsx>{`

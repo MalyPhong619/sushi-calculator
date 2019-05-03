@@ -35,6 +35,8 @@ Component Tree | Color Scheme
 * Google API
 * ATOM
 
+* https://css-tricks.com/set-text-on-a-circle/
+
 ## Frameworks, Libraries, Languages
 
 * HTML
