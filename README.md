@@ -21,6 +21,7 @@ _Sushi Go-around Calculator allows the user to add the amount per plate color th
 - [ ] Pin location on map
 - [ ] Display "Happy Hour" information
 - [ ] Functions to calculate total during "Happy Hour" (custom/automatic default tips)
+- [ ] Randomizer to select a restaurant for user
 
 ## Tools/Resources
 
