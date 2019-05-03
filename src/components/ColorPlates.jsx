@@ -29,31 +29,59 @@ function ColorPlates() {
             background-color: white;
             box-shadow: inset 5px 3px 5px 0 rgba(20,20,20,.4);
           }
+          input {
+            display: inline-block;
+            border: solid 2px pink;
+            height: 91%;
+            width: 91%;
+            border-radius: 50%;
+            background: none;
+            text-align: center;
+            font-size: 2rem;
+          }
+          h2 {
+            margin: 2px;
+          }
           `}
         </style>
         <div className='plate redPlate'>
+          <h2>Price</h2>
           <div style={{backgroundColor: '#FF2A2B'}} className='outerPlate'>
-            <p className='innerPlate'></p>
+            <div className='innerPlate'>
+              <input type='text' />
+            </div>
           </div>
         </div>
         <div className='plate bluePlate'>
+          <h2>Price</h2>
           <div style={{backgroundColor: '#0F97FF'}} className='outerPlate'>
-            <p className='innerPlate'></p>
+            <div className='innerPlate'>
+              <input type='text' />
+            </div>
           </div>
         </div>
         <div className='plate greenPlate'>
+          <h2>Price</h2>
           <div style={{backgroundColor: '#54FF40'}} className='outerPlate'>
-            <p className='innerPlate'></p>
+            <div className='innerPlate'>
+              <input type='text' />
+            </div>
           </div>
         </div>
         <div className='plate yellowPlate'>
+          <h2>Price</h2>
           <div style={{backgroundColor: '#B000FF'}} className='outerPlate'>
-            <p className='innerPlate'></p>
+            <div className='innerPlate'>
+              <input type='text' />
+            </div>
           </div>
         </div>
         <div className='plate purplePlate'>
+          <h2>Price</h2>
           <div style={{backgroundColor: '#F5E922'}} className='outerPlate'>
-            <p className='innerPlate'></p>
+            <div className='innerPlate'>
+              <input type='text' />
+            </div>
           </div>
         </div>
 
