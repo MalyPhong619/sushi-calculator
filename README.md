@@ -10,10 +10,10 @@ _Sushi Go-around Calculator allows the user to add the amount of color plates th
 - [ ] Display Restaurant information ( _Name, Location & Hours_ )
 - [ ] List Restaurants that are only open
 - [ ] CSS Styling on plates ( _blue, red, green, yellow, purple, etc_ )
-- [ ] Functions to add plate colors together
+- [ ] Functions to calculate total
 - [ ] Splash page to welcome users
 - [ ] CSS Animations
-- [ ] Calculate Tips
+- [ ] Functions to Calculate Tips
 - [ ] Firebase data for Conveyor belt sushi restaurants ( _Restaurants {name: , location: , hours: , plateColors: price_ })
 
 ## Stretch Goals
