@@ -2,6 +2,7 @@ import React from 'react';
 
 function ColorPlates() {
 
+
   return(
     <div>
       <style jsx>{`
@@ -40,7 +41,9 @@ function ColorPlates() {
             font-size: 2rem;
           }
           h2 {
+            transform-origin: bottom center;
             margin: 2px;
+            border: 1px solid red;
           }
           `}
         </style>
@@ -84,7 +87,6 @@ function ColorPlates() {
             </div>
           </div>
         </div>
-
 
       </div>
     );
