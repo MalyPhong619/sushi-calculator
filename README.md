@@ -25,7 +25,7 @@ _Sushi Go-around Calculator allows the user to add the amount per plate color th
 
 ## Project Drafts
 
-Component Tree | Color Scheme
+Component Tree | Plate Colors
  ---------- | ----------
 <img src="src/assets/images/component-tree.png"> | <img src="src/assets/images/Color-Scheme.png">
 
