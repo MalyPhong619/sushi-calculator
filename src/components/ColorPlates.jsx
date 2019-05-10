@@ -1,8 +1,11 @@
 import React from 'react';
+import CircleType from 'circletype';
 
 
 function ColorPlates() {
+const circleType = new CircleType(document.getElementById('redPlate'));
 
+console.log(circleType)
 
   return(
     <div>
@@ -47,8 +50,8 @@ function ColorPlates() {
           }
           `}
         </style>
-        <div id='redPlate' className='plate redPlate'>
-          <h2>Price</h2>
+        <div className='plate redPlate'>
+          <h2 id='redPlate'>Price</h2>
           <div style={{backgroundColor: '#FF2A2B'}} className='outerPlate'>
             <div className='innerPlate'>
               <input type='text' />
