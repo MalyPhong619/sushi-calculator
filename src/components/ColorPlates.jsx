@@ -3,9 +3,7 @@ import CircleType from 'circletype';
 
 
 function ColorPlates() {
-const circleType = new CircleType(document.getElementById('redPlate'));
-
-console.log(circleType)
+  new CircleType(document.getElementById('redPlate')).radius(384);
 
   return(
     <div>
