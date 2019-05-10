@@ -1,9 +1,10 @@
 import React from 'react';
-import CircleType from 'circletype';
+// import CircleType from 'circletype';
 
 
 function ColorPlates() {
-  new CircleType(document.getElementById('redPlate')).radius(384);
+
+  // new CircleType(document.getElementById('redPlate')).radius(384);
 
   return(
     <div>
