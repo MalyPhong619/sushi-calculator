@@ -2,11 +2,8 @@ import React from 'react';
 // import CircleType from 'circletype';
 
 
-class ColorPlates extends React.Compoment {
+function ColorPlates() {
 
-
-
-render() {
   return(
     <div>
       <style jsx>{`
@@ -93,7 +90,5 @@ render() {
       </div>
     );
   }
-}
-
 
   export default ColorPlates;

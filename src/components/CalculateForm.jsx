@@ -2,7 +2,10 @@ import React from 'react';
 
 function CalculateForm() {
   return(
-    <p>this is the calc form</p>
+    <form>
+    <p>this is calculate form</p>
+
+    </form>
 
   );
 }
