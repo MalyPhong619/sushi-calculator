@@ -1,18 +1,19 @@
 import React from 'react';
 import CircleType from 'circletype';
 
+
 function ColorPlates() {
 
-  // const circleType = new CircleType(document.getElementById('redPlate'));
-  // circleType.radius(200).dir(-1);
-
-  const splitter = new GraphemeSplitter()
+//   const circleType = new CircleType(document.getElementById('redPlate'));
+//   circleType.radius(200).dir(-1);
+//
+//   const splitter = new GraphemeSplitter()
 //   new CircleType(
 //   document.getElementById('redPlate'),
 //   splitter.splitGraphemes.bind(splitter)
 // );
-
-console.log(splitter);
+//
+// console.log(splitter);
 
   return(
     <div>
