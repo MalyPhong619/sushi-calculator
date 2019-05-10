@@ -2,10 +2,11 @@ import React from 'react';
 // import CircleType from 'circletype';
 
 
-function ColorPlates() {
+class ColorPlates extends React.Compoment {
 
-  // new CircleType(document.getElementById('redPlate')).radius(384);
 
+
+render() {
   return(
     <div>
       <style jsx>{`
@@ -92,5 +93,7 @@ function ColorPlates() {
       </div>
     );
   }
+}
+
 
   export default ColorPlates;
