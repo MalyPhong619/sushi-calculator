@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import RestaurantControl from './RestaurantControl';
-import CalculateForm from './CalculateForm';
 
 function Display(){
   const Something = styled.h1`
@@ -22,7 +21,6 @@ function Display(){
     <div>
       <Something>Welcome to the home component</Something>
       <RestaurantControl />
-      <CalculateForm />
     </div>
   )
 }

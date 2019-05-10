@@ -1,5 +1,6 @@
 import React from 'react';
-// import CircleType from 'circletype';
+import CalculateForm from './CalculateForm';
+
 
 
 function ColorPlates() {
@@ -87,6 +88,8 @@ function ColorPlates() {
             </div>
           </div>
         </div>
+        <CalculateForm />
+        
       </div>
     );
   }
