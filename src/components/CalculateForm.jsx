@@ -3,7 +3,8 @@ import React from 'react';
 function CalculateForm() {
   const border = {
     border: '1px solid red',
-    width: '80%'
+    width: '50%',
+    height: 'auto'
   }
   return(
     <form style={border}>

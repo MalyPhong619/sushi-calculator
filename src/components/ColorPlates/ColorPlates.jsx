@@ -29,16 +29,6 @@ function ColorPlates() {
             background-color: white;
             box-shadow: inset 5px 3px 5px 0 rgba(20,20,20,.4);
           }
-          input {
-            display: inline-block;
-            border: solid 2px pink;
-            height: 91%;
-            width: 91%;
-            border-radius: 50%;
-            background: none;
-            text-align: center;
-            font-size: 2rem;
-          }
           h2 {
             margin: 2px;
             border: 1px solid red;
