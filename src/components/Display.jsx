@@ -26,7 +26,7 @@ function Display(props){
 }
 
 Display.propTypes = {
-  restaurantList: PropTypes.object
+  restaurantList: PropTypes.array
 }
 
 export default Display;
