@@ -6,7 +6,7 @@ import styled from 'styled-components';
 function CalcDisplay(){
   const mainCalcDiv = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-flow: row nowrap;
   `
   return(
     <mainCalcDiv>

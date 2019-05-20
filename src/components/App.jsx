@@ -6,9 +6,10 @@ import Display from './Display';
 import CalcDisplay from './CalcDisplay';
 import { Switch, Route } from 'react-router-dom';
 
-function App() {
+class App extends React.Component {
 
 
+render(){
   return (
     <div className="App">
       <Header/>
@@ -19,6 +20,7 @@ function App() {
       </Switch>
     </div>
   );
+}
 }
 
 export default App;
