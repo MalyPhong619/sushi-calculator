@@ -7,7 +7,11 @@ function RestaurantControl() {
     <div>
       <p>This is Restaurant Control</p>
       <ColorPlates />
-      <Restaurant />
+      <Restaurant
+        name='SUSHI SAKURA'
+        location='506 SW 6th Ave'
+        hoursOpen='11 am'
+        hoursClosed='9:30 pm' />
     </div>
   );
 }

@@ -12,7 +12,7 @@ function Restaurant(props) {
   );
 }
 
-Restaurant.propTyepes = {
+Restaurant.propTypes = {
   name: PropTypes.string,
   location: PropTypes.string,
   hoursOpen: PropTypes.string,
