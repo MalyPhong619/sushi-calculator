@@ -3,7 +3,7 @@ import './App.scss';
 import Error404 from './Error404';
 import Header from './Header';
 import Display from './Display';
-import ColorPlates from './ColorPlates';
+import ColorPlates from './ColorPlates/ColorPlates';
 import { Switch, Route } from 'react-router-dom';
 
 function App() {

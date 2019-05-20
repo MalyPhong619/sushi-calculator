@@ -1,7 +1,4 @@
 import React from 'react';
-import CalculateForm from './CalculateForm';
-
-
 
 function ColorPlates() {
 
@@ -83,8 +80,6 @@ function ColorPlates() {
             </div>
           </div>
         </div>
-        <CalculateForm />
-
       </div>
     );
   }

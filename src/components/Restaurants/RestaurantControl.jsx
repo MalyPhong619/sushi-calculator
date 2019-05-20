@@ -1,6 +1,6 @@
 import React from 'react';
 import Restaurant from './Restaurant';
-import ColorPlates from './ColorPlates';
+import ColorPlates from '../ColorPlates/ColorPlates';
 
 function RestaurantControl() {
   return(

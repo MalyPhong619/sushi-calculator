@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import RestaurantControl from './RestaurantControl';
+import RestaurantControl from './Restaurants/RestaurantControl';
 
 function Display(){
   const Something = styled.h1`
