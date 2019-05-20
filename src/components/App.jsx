@@ -55,6 +55,10 @@ class App extends React.Component {
     };
   }
 
+  handleSelectingRestaurant() {
+    
+  }
+
 
   render(){
     return (
