@@ -4,7 +4,8 @@ import { Link } from 'react-router-dom';
 function Header(){
   return(
     <div>
-      <Link to='/'>Home</Link> / / / 
+      <h1>Sushi Go Around Calculator</h1>
+      <Link to='/'>Home</Link> / / /
       <Link to='/calculator'>Calculator</Link>
     </div>
   )
