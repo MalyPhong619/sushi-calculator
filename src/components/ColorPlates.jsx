@@ -52,7 +52,6 @@ function ColorPlates() {
           <h2 id='redPlate'>Price</h2>
           <div style={{backgroundColor: '#FF2A2B'}} className='outerPlate'>
             <div className='innerPlate'>
-              <input type='text' />
             </div>
           </div>
         </div>
@@ -60,7 +59,6 @@ function ColorPlates() {
           <h2>Price</h2>
           <div style={{backgroundColor: '#0F97FF'}} className='outerPlate'>
             <div className='innerPlate'>
-              <input type='text' />
             </div>
           </div>
         </div>
@@ -68,7 +66,6 @@ function ColorPlates() {
           <h2>Price</h2>
           <div style={{backgroundColor: '#54FF40'}} className='outerPlate'>
             <div className='innerPlate'>
-              <input type='text' />
             </div>
           </div>
         </div>
@@ -76,7 +73,6 @@ function ColorPlates() {
           <h2>Price</h2>
           <div style={{backgroundColor: '#B000FF'}} className='outerPlate'>
             <div className='innerPlate'>
-              <input type='text' />
             </div>
           </div>
         </div>
@@ -84,12 +80,11 @@ function ColorPlates() {
           <h2>Price</h2>
           <div style={{backgroundColor: '#F5E922'}} className='outerPlate'>
             <div className='innerPlate'>
-              <input type='text' />
             </div>
           </div>
         </div>
         <CalculateForm />
-        
+
       </div>
     );
   }
