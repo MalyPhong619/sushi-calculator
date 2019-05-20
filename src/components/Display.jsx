@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import RestaurantControl from './Restaurants/RestaurantControl';
 
 function Display(){
   const Something = styled.h1`
@@ -20,7 +19,6 @@ function Display(){
   return(
     <div>
       <Something>Welcome to the home component</Something>
-      <RestaurantControl />
     </div>
   )
 }
