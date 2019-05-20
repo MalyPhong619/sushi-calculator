@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
-function Display(){
+function Display(props){
+  console.log(props.restaurantList)
   const Something = styled.h1`
   @keyframes pulse {
     0%{color: hotpink}
@@ -21,6 +23,10 @@ function Display(){
       <Something>Welcome to the home component</Something>
     </div>
   )
+}
+
+Display.propTypes = {
+  restaurantList: PropTypes.object
 }
 
 export default Display;
