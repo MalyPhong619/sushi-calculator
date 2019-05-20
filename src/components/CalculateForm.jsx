@@ -8,7 +8,6 @@ function CalculateForm() {
     type='text'
     id='redPlateSum'
     placeholder='Red Plate'></input>
-
     </form>
 
   );

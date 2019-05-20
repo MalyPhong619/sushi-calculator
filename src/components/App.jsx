@@ -3,7 +3,7 @@ import './App.scss';
 import Error404 from './Error404';
 import Header from './Header';
 import Display from './Display';
-import ColorPlates from './ColorPlates/ColorPlates';
+import CalcDisplay from './CalcDisplay';
 import { Switch, Route } from 'react-router-dom';
 
 function App() {
@@ -14,7 +14,7 @@ function App() {
       <Header/>
       <Switch>
         <Route exact path='/' component={Display} />
-        <Route exact path='/calculator' component={ColorPlates} />
+        <Route exact path='/calculator' component={CalcDisplay} />
         <Route component={Error404}/>
       </Switch>
     </div>
