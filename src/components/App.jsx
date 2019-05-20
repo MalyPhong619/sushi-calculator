@@ -53,20 +53,21 @@ class App extends React.Component {
         }
       ]
     };
-
-
-    render(){
-      return (
-        <div className="App">
-          <Header/>
-          <Switch>
-            <Route exact path='/'  render={()=><Display restaurantList={this.props.masterRestaurantList} />} />
-            <Route exact path='/calculator' component={CalcDisplay} />
-            <Route component={Error404}/>
-          </Switch>
-        </div>
-      );
-    }
   }
 
-  export default App;
+
+  render(){
+    return (
+      <div className="App">
+        <Header/>
+        <Switch>
+          <Route exact path='/'  render={()=><Display restaurantList={this.props.masterRestaurantList} />} />
+          <Route exact path='/calculator' component={CalcDisplay} />
+          <Route component={Error404}/>
+        </Switch>
+      </div>
+    );
+  }
+}
+
+export default App;
