@@ -3,7 +3,8 @@ import ColorPlates from './ColorPlates/ColorPlates';
 import CalculateForm from './CalculateForm';
 import styled from 'styled-components';
 
-function CalcDisplay(){
+function CalcDisplay(props){
+  console.log("Calc ", props.restaurantList)
   const MainCalcDiv = styled.div`
   display: flex;
   flex-flow: row nowrap;
