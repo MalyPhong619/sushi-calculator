@@ -8,6 +8,7 @@ function CalcDisplay(props){
   const MainCalcDiv = styled.div`
   display: flex;
   flex-flow: row nowrap;
+  justify-content: center;
   `
   return(
     <MainCalcDiv>
