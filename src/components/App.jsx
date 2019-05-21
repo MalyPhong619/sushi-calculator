@@ -57,7 +57,16 @@ class App extends React.Component {
   }
 
   handleSelectingRestaurant() {
-    this.state = this.state.masterRestaurantList.key
+    this.state = {
+      name: this.props.name,
+      location: this.props.location,
+      hoursOpen: this.props.hoursOpen,
+      hoursClosed: this.props.hoursClosed,
+      red: this.props.red,
+      blue: this.props.blue,
+      yellow: this.props.yellow,
+      green: this.props.green
+    }
     console.log("new state", this.state);
   }
 

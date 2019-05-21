@@ -3,21 +3,21 @@ import PropTypes from 'prop-types';
 import Restaurant from './Restaurants/Restaurant';
 
 function Display(props){
-  console.log(props.restaurantList)
+  console.log(props.onHandleSelectingRestaurant)
 
   return(
     <div>
       {props.restaurantList.map((post, index) =>
-        <Restaurant
-          name={post.name}
-          key={index} />
+        <h1 onClick={props.onHandleSelectingRestaurant}
+          key={index}> {post.name}</h1>
       )}
     </div>
   )
 }
 
 Display.propTypes = {
-  restaurantList: PropTypes.array
+  restaurantList: PropTypes.array,
+  onHandleSelectingRestaurant: PropTypes.func
 }
 
 export default Display;
