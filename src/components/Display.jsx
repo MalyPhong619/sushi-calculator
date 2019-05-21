@@ -1,14 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Restaurant from './Restaurants/Restaurant';
 
 function Display(props){
-  console.log(props.onHandleSelectingRestaurant)
 
   return(
     <div>
       {props.restaurantList.map((post, index) =>
-        <h1 onClick={props.onHandleSelectingRestaurant}
+        <h1 onClick={() => props.onHandleSelectingRestaurant(post)}
           key={index}> {post.name}</h1>
       )}
     </div>

@@ -56,18 +56,19 @@ class App extends React.Component {
     this.handleSelectingRestaurant = this.handleSelectingRestaurant.bind(this);
   }
 
-  handleSelectingRestaurant() {
-    this.state = {
-      name: this.props.name,
-      location: this.props.location,
-      hoursOpen: this.props.hoursOpen,
-      hoursClosed: this.props.hoursClosed,
-      red: this.props.red,
-      blue: this.props.blue,
-      yellow: this.props.yellow,
-      green: this.props.green
+  handleSelectingRestaurant(props) {
+    console.log("logging props ", props);
+    this.setState = {
+      name: props.name,
+      location: props.location,
+      hoursOpen: props.hoursOpen,
+      hoursClosed: props.hoursClosed,
+      red: props.red,
+      blue: props.blue,
+      yellow: props.yellow,
+      green: props.green
     }
-    console.log("new state", this.state);
+    console.log("new state", this.setState);
   }
 
 
