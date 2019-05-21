@@ -49,8 +49,6 @@ function ColorPlates(props) {
             </div>
           }
         })}
-
-
       </div>
     );
   }

@@ -14,42 +14,42 @@ class App extends React.Component {
         {
           name: 'Sushi Sakura',
           location: '506 SW 6th Ave',
-          hoursOpen: '11 pm',
-          hoursClosed: '9:30 am',
-          red: 1.20,
-          blue: 2.10,
-          yellow: 2.60,
-          orange: 3.10
+          closingTime: '11 pm',
+          openingTime: '9:30 am',
+          red: '1.20',
+          blue: '2.10',
+          yellow: '2.60',
+          orange: '3.10'
         },
         {
           name: 'Sushi Ohana',
           location: '1422 Northeast Broadway',
-          hoursOpen: '11 pm',
-          hoursClosed: '9:30 am',
-          red: 1.20,
-          blue: 2.10,
-          yellow: 2.60,
-          green: 3.10
+          closingTime: '11 pm',
+          openingTime: '9:30 am',
+          red: '1.20',
+          blue: '2.10',
+          yellow: '2.60',
+          green: '3.10'
         },
         {
           name: 'Sushi Chiyo',
           location: '4029 NE Sandy Blvd',
-          hoursOpen: '11 pm',
-          hoursClosed: '9:30 am',
-          red: 1.20,
-          blue: 2.10,
-          yellow: 2.60,
-          purple: 3.10
+          closingTime: '11 pm',
+          openingTime: '9:30 am',
+          red: '1.20',
+          blue: '2.10',
+          yellow: '2.60',
+          purple: '3.10'
         },
         {
           name: 'Sushi Sapporo',
           location: '9738 SE Washington St ste m',
-          hoursOpen: '11 pm',
-          hoursClosed: '9:30 am',
-          red: 1.20,
-          blue: 2.10,
-          yellow: 2.60,
-          green: 3.10
+          closingTime: '11 pm',
+          openingTime: '9:30 am',
+          red: '1.20',
+          blue: '2.10',
+          yellow: '2.60',
+          green: '3.10'
         }
       ]
     };
@@ -60,8 +60,8 @@ class App extends React.Component {
     this.setState = {
       name: props.name,
       location: props.location,
-      hoursOpen: props.hoursOpen,
-      hoursClosed: props.hoursClosed,
+      closingTime: props.closingTime,
+      openingTime: props.openingTime,
       colorPlates: {
         red: props.red,
         blue: props.blue,
@@ -83,12 +83,12 @@ class App extends React.Component {
             render={()=><Display restaurantList={this.state.masterRestaurantList} onHandleSelectingRestaurant={this.handleSelectingRestaurant} />} />
           <Route exact path='/calculator'
             render={()=><CalcDisplay
-            restaurant={this.setState} />} />
-          <Route component={Error404}/>
-        </Switch>
-      </div>
-    );
+              restaurant={this.setState} />} />
+            <Route component={Error404}/>
+          </Switch>
+        </div>
+      );
+    }
   }
-}
 
-export default App;
+  export default App;
