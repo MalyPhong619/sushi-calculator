@@ -2,14 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function ColorPlates(props) {
-console.log("color plates", props)
   return(
-    <div>
+    <div id='colorPlatesDiv'>
       <style jsx>{`
+          #colorPlatesDiv {
+            display: flex;
+            justify-content: center;
+            flex-flow: column nowrap;
+          }
           .plate {
-            margin-top: 8px;
             width: 25%;
             text-align: center;
+            margin: 10px;
           }
           .outerPlate {
             display: inline-block;
@@ -30,49 +34,29 @@ console.log("color plates", props)
             background-color: white;
             box-shadow: inset 5px 3px 5px 0 rgba(20,20,20,.4);
           }
-          h2 {
-            margin: 2px;
-            border: 1px solid red;
-          }
           `}
         </style>
-        <div className='plate redPlate'>
-          <h2 id='redPlate'>Price</h2>
-          <div style={{backgroundColor: '#FF2A2B'}} className='outerPlate'>
-            <div className='innerPlate'>
+        <h2>Color Plates:</h2>
+        {Object.keys(props.restaurant.colorPlates).map((plate, index) => {
+          let currentPlate = props.restaurant.colorPlates[plate];
+          if(currentPlate){
+            return <div key={index} className='plate'>
+              <div style={{backgroundColor: plate}} className='outerPlate'>
+                <div className='innerPlate'>
+                  <h3 className='platePrice'>$ {currentPlate}</h3>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div className='plate bluePlate'>
-          <h2>Price</h2>
-          <div style={{backgroundColor: '#0F97FF'}} className='outerPlate'>
-            <div className='innerPlate'>
-            </div>
-          </div>
-        </div>
-        <div className='plate greenPlate'>
-          <h2>Price</h2>
-          <div style={{backgroundColor: '#54FF40'}} className='outerPlate'>
-            <div className='innerPlate'>
-            </div>
-          </div>
-        </div>
-        <div className='plate yellowPlate'>
-          <h2>Price</h2>
-          <div style={{backgroundColor: '#B000FF'}} className='outerPlate'>
-            <div className='innerPlate'>
-            </div>
-          </div>
-        </div>
-        <div className='plate purplePlate'>
-          <h2>Price</h2>
-          <div style={{backgroundColor: '#F5E922'}} className='outerPlate'>
-            <div className='innerPlate'>
-            </div>
-          </div>
-        </div>
+          }
+        })}
+
+
       </div>
     );
+  }
+
+  ColorPlates.propTypes = {
+    restaurant: PropTypes.object
   }
 
   export default ColorPlates;

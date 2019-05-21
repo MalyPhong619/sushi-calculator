@@ -16,40 +16,40 @@ class App extends React.Component {
           location: '506 SW 6th Ave',
           hoursOpen: '11 pm',
           hoursClosed: '9:30 am',
-          red: 1.2,
-          blue: 2.1,
-          yellow: 2.6,
-          orange: 3.1
+          red: 1.20,
+          blue: 2.10,
+          yellow: 2.60,
+          orange: 3.10
         },
         {
           name: 'Sushi Ohana',
           location: '1422 Northeast Broadway',
           hoursOpen: '11 pm',
           hoursClosed: '9:30 am',
-          red: 1.2,
-          blue: 2.1,
-          yellow: 2.6,
-          green: 3.1
+          red: 1.20,
+          blue: 2.10,
+          yellow: 2.60,
+          green: 3.10
         },
         {
           name: 'Sushi Chiyo',
           location: '4029 NE Sandy Blvd',
           hoursOpen: '11 pm',
           hoursClosed: '9:30 am',
-          red: 1.2,
-          blue: 2.1,
-          yellow: 2.6,
-          purple: 3.1
+          red: 1.20,
+          blue: 2.10,
+          yellow: 2.60,
+          purple: 3.10
         },
         {
           name: 'Sushi Sapporo',
           location: '9738 SE Washington St ste m',
           hoursOpen: '11 pm',
           hoursClosed: '9:30 am',
-          red: 1.2,
-          blue: 2.1,
-          yellow: 2.6,
-          green: 3.1
+          red: 1.20,
+          blue: 2.10,
+          yellow: 2.60,
+          green: 3.10
         }
       ]
     };
@@ -57,17 +57,19 @@ class App extends React.Component {
   }
 
   handleSelectingRestaurant(props) {
-    console.log("logging props ", props);
     this.setState = {
       name: props.name,
       location: props.location,
       hoursOpen: props.hoursOpen,
       hoursClosed: props.hoursClosed,
-      red: props.red,
-      blue: props.blue,
-      yellow: props.yellow,
-      green: props.green,
-      orange: props.orange
+      colorPlates: {
+        red: props.red,
+        blue: props.blue,
+        yellow: props.yellow,
+        green: props.green,
+        orange: props.orange,
+        purple: props.purple
+      }
     }
   }
 
@@ -77,8 +79,11 @@ class App extends React.Component {
       <div className="App">
         <Header/>
         <Switch>
-          <Route exact path='/'  render={()=><Display restaurantList={this.state.masterRestaurantList} onHandleSelectingRestaurant={this.handleSelectingRestaurant} />} />
-          <Route exact path='/calculator' render={()=><CalcDisplay restaurant={this.setState} />} />
+          <Route exact path='/'
+            render={()=><Display restaurantList={this.state.masterRestaurantList} onHandleSelectingRestaurant={this.handleSelectingRestaurant} />} />
+          <Route exact path='/calculator'
+            render={()=><CalcDisplay
+            restaurant={this.setState} />} />
           <Route component={Error404}/>
         </Switch>
       </div>
