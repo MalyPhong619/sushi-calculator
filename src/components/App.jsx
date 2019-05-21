@@ -66,9 +66,9 @@ class App extends React.Component {
       red: props.red,
       blue: props.blue,
       yellow: props.yellow,
-      green: props.green
+      green: props.green,
+      orange: props.orange
     }
-    console.log("new state", this.setState);
   }
 
 
@@ -78,7 +78,7 @@ class App extends React.Component {
         <Header/>
         <Switch>
           <Route exact path='/'  render={()=><Display restaurantList={this.state.masterRestaurantList} onHandleSelectingRestaurant={this.handleSelectingRestaurant} />} />
-          <Route exact path='/calculator' render={()=><CalcDisplay restaurantList={this.state.masterRestaurantList} />} />
+          <Route exact path='/calculator' render={()=><CalcDisplay restaurantList={this.setState} />} />
           <Route component={Error404}/>
         </Switch>
       </div>

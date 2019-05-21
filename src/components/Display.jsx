@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 function Display(props){
 
@@ -7,7 +8,7 @@ function Display(props){
     <div>
       {props.restaurantList.map((post, index) =>
         <h1 onClick={() => props.onHandleSelectingRestaurant(post)}
-          key={index}> {post.name}</h1>
+          key={index}> <Link to='/calculator'>{post.name}</Link></h1>
       )}
     </div>
   )

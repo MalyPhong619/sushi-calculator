@@ -4,7 +4,7 @@ import CalculateForm from './CalculateForm';
 import styled from 'styled-components';
 
 function CalcDisplay(props){
-  console.log("Calc ", props.restaurantList)
+  console.log("Calc ", props)
   const MainCalcDiv = styled.div`
   display: flex;
   flex-flow: row nowrap;
