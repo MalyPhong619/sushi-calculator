@@ -12,7 +12,7 @@ function CalcDisplay(props){
   `
   return(
     <MainCalcDiv>
-      <ColorPlates />
+      <ColorPlates restaurant={props.restaurant} />
       <CalculateForm />
     </MainCalcDiv>
   );

@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function ColorPlates() {
-
+function ColorPlates(props) {
+console.log("color plates", props)
   return(
     <div>
       <style jsx>{`

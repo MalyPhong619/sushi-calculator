@@ -78,7 +78,7 @@ class App extends React.Component {
         <Header/>
         <Switch>
           <Route exact path='/'  render={()=><Display restaurantList={this.state.masterRestaurantList} onHandleSelectingRestaurant={this.handleSelectingRestaurant} />} />
-          <Route exact path='/calculator' render={()=><CalcDisplay restaurantList={this.setState} />} />
+          <Route exact path='/calculator' render={()=><CalcDisplay restaurant={this.setState} />} />
           <Route component={Error404}/>
         </Switch>
       </div>
