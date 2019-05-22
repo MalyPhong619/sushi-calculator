@@ -1,7 +1,6 @@
 import React from 'react';
 
 function UserInformation(props) {
-  console.log("calc: ", props)
   const border = {
     width: '50%',
     height: 'auto'

@@ -3,10 +3,8 @@ import PropTypes from 'prop-types';
 
 function ColorPlates(props) {
 
-function calculatePlateTotal(param1){
-  let plateColorPrice = parseFloat(param1)
-  console.log(plateColorPrice)
-}
+
+
 
   return(
     <div id='colorPlatesDiv'>
@@ -80,14 +78,14 @@ function calculatePlateTotal(param1){
             return <div key={index} className='plate'>
               <h2 className='platePrice'>$ {currentPlate}</h2>
               <div style={{backgroundColor: plate}} className='outerPlate'>
-                <button onClick={calculatePlateTotal(currentPlate)} className='buttonStyle'>-</button>
+                <button className='buttonStyle' value='-'>-</button>
                 <div className='innerPlate'>
                   <input className='plateTotal'
                     type='text'
                     id={plate}
                     placeholder={plate}></input>
                 </div>
-                <button onClick={calculatePlateTotal(currentPlate)} className='buttonStyle'>+</button>
+                <button className='buttonStyle' value='+'>+</button>
               </div>
             </div>
           }
