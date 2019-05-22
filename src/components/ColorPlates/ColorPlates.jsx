@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 function ColorPlates(props) {
 
-
   return(
     <div id='colorPlatesDiv'>
       <style jsx>{`
@@ -72,12 +71,16 @@ function ColorPlates(props) {
         <h2>Color Plates:</h2>
         {Object.keys(props.restaurant.colorPlates).map((plate, index) => {
           let currentPlate = props.restaurant.colorPlates[plate];
-          let totalPrice = 0;
+          let plateClicks = 0;
+          let sushitototal;
 
-          function click() {
-            totalPrice++
-            console.log(totalPrice);
+          function addPlates(currenPlate) {
+            plateClicks++
+            let currentPlatePrice = parseFloat(currentPlate)
+            sushitototal = currentPlatePrice * plateClicks
+            console.log(plate, plateClicks, sushitototal);
           }
+
           if(currentPlate){
             return <div key={index} className='plate'>
               <h2 className='platePrice'>$ {currentPlate}</h2>
@@ -89,7 +92,7 @@ function ColorPlates(props) {
                     id={plate}
                     placeholder={plate}></input>
                 </div>
-                <button onClick={click} className='buttonStyle' value='+'>+</button>
+                <button onClick={addPlates} className='buttonStyle' value='+'>+</button>
               </div>
             </div>
           }
