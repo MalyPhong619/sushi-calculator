@@ -9,14 +9,26 @@ function ColorPlates(props) {
             display: flex;
             justify-content: center;
             flex-flow: column nowrap;
+            border: 1px solid blue;
           }
           .plate {
+            display: flex;
+            justify-content: center;
+            flex-flow: column nowrap;
+            align-items: center;
             width: 25%;
+            margin-top: 2vh;
             text-align: center;
-            margin: 10px;
+            width: 100%;
+          }
+          .platePrice {
+            margin: 0;
           }
           .outerPlate {
-            display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column nowrap;
             border: 1px solid black;
             border-radius: 50%;
             width: 150px;
@@ -30,9 +42,13 @@ function ColorPlates(props) {
             border-radius: 50%;
             width: 50%;
             height: 50%;
-            margin-top: 25%;
             background-color: white;
             box-shadow: inset 5px 3px 5px 0 rgba(20,20,20,.4);
+          }
+          .plateTotal {
+            width: 100%;
+            height: 100%;
+            border: 1px solid pink;
           }
           `}
         </style>
@@ -41,9 +57,13 @@ function ColorPlates(props) {
           let currentPlate = props.restaurant.colorPlates[plate];
           if(currentPlate){
             return <div key={index} className='plate'>
+              <h2 className='platePrice'>$ {currentPlate}</h2>
               <div style={{backgroundColor: plate}} className='outerPlate'>
                 <div className='innerPlate'>
-                  <h3 className='platePrice'>$ {currentPlate}</h3>
+                  <input className='plateTotal'
+                    type='text'
+                    id={plate}
+                    placeholder={plate}></input>
                 </div>
               </div>
             </div>

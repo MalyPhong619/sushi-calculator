@@ -62,6 +62,7 @@ class App extends React.Component {
       location: props.location,
       closingTime: props.closingTime,
       openingTime: props.openingTime,
+      restaurantTotal: 0,
       colorPlates: {
         red: props.red,
         blue: props.blue,
