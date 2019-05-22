@@ -9,9 +9,9 @@ function ColorPlates(props) {
             display: flex;
             justify-content: center;
             flex-flow: column nowrap;
-            border: 1px solid blue;
           }
           .plate {
+            border: 1px solid hotpink;
             display: flex;
             justify-content: center;
             flex-flow: column nowrap;
@@ -27,8 +27,8 @@ function ColorPlates(props) {
           .outerPlate {
             display: flex;
             align-items: center;
-            justify-content: center;
-            flex-flow: column nowrap;
+            justify-content: space-around;
+            flex-flow: row nowrap;
             border: 1px solid black;
             border-radius: 50%;
             width: 150px;
@@ -36,19 +36,33 @@ function ColorPlates(props) {
             box-shadow: 0px 3px 10px black, inset 5px 3px 5px 0 rgba(255,255,255,.4);
           }
           .innerPlate {
-            display: inline-block;
-            vertical-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             border: 1px solid black;
             border-radius: 50%;
             width: 50%;
             height: 50%;
             background-color: white;
             box-shadow: inset 5px 3px 5px 0 rgba(20,20,20,.4);
+            overflow: hidden;
           }
           .plateTotal {
             width: 100%;
             height: 100%;
-            border: 1px solid pink;
+            text-align: center;
+            font-size: 1.2rem;
+          }
+          .buttonStyle {
+            background: black;
+            opacity: .5;
+            font-size: 1.3em;
+            color: white;
+            text-align: center;
+            border-radius: 50%;
+          }
+          .buttonStyle:hover {
+            opacity: 1;
           }
           `}
         </style>
@@ -59,12 +73,14 @@ function ColorPlates(props) {
             return <div key={index} className='plate'>
               <h2 className='platePrice'>$ {currentPlate}</h2>
               <div style={{backgroundColor: plate}} className='outerPlate'>
+                <button className='buttonStyle'> - </button>
                 <div className='innerPlate'>
                   <input className='plateTotal'
                     type='text'
                     id={plate}
                     placeholder={plate}></input>
                 </div>
+                <button className='buttonStyle'> + </button>
               </div>
             </div>
           }
