@@ -2,6 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function ColorPlates(props) {
+
+function calculatePlateTotal(param1){
+  let plateColorPrice = parseFloat(param1)
+  console.log(plateColorPrice)
+}
+
   return(
     <div id='colorPlatesDiv'>
       <style jsx>{`
@@ -11,7 +17,6 @@ function ColorPlates(props) {
             flex-flow: column nowrap;
           }
           .plate {
-            border: 1px solid hotpink;
             display: flex;
             justify-content: center;
             flex-flow: column nowrap;
@@ -56,10 +61,12 @@ function ColorPlates(props) {
           .buttonStyle {
             background: black;
             opacity: .5;
-            font-size: 1.3em;
+            font-size: 1em;
             color: white;
             text-align: center;
             border-radius: 50%;
+            width: 30px;
+            height: 30px;
           }
           .buttonStyle:hover {
             opacity: 1;
@@ -73,14 +80,14 @@ function ColorPlates(props) {
             return <div key={index} className='plate'>
               <h2 className='platePrice'>$ {currentPlate}</h2>
               <div style={{backgroundColor: plate}} className='outerPlate'>
-                <button className='buttonStyle'> - </button>
+                <button onClick={calculatePlateTotal(currentPlate)} className='buttonStyle'>-</button>
                 <div className='innerPlate'>
                   <input className='plateTotal'
                     type='text'
                     id={plate}
                     placeholder={plate}></input>
                 </div>
-                <button className='buttonStyle'> + </button>
+                <button onClick={calculatePlateTotal(currentPlate)} className='buttonStyle'>+</button>
               </div>
             </div>
           }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CalculateForm(props) {
+function UserInformation(props) {
   console.log("calc: ", props)
   const border = {
     width: '50%',
@@ -18,4 +18,4 @@ function CalculateForm(props) {
   )
 }
 
-  export default CalculateForm;
+  export default UserInformation;

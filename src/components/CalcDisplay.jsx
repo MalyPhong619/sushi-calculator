@@ -1,6 +1,6 @@
 import React from 'react';
 import ColorPlates from './ColorPlates/ColorPlates';
-import CalculateForm from './CalculateForm';
+import UserInformation from './UserInformation';
 import styled from 'styled-components';
 
 function CalcDisplay(props){
@@ -12,7 +12,7 @@ function CalcDisplay(props){
   return(
     <MainCalcDiv>
       <ColorPlates restaurant={props.restaurant} />
-      <CalculateForm restaurant={props.restaurant}/>
+      <UserInformation restaurant={props.restaurant}/>
     </MainCalcDiv>
   );
 }
