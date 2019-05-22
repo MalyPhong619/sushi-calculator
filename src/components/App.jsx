@@ -16,10 +16,10 @@ class App extends React.Component {
           location: '506 SW 6th Ave',
           closingTime: '11 pm',
           openingTime: '9:30 am',
-          red: '1.20',
+          red: '1.15',
           blue: '2.10',
           yellow: '2.60',
-          orange: '3.10'
+          orange: '3.30'
         },
         {
           name: 'Sushi Ohana',
@@ -27,9 +27,9 @@ class App extends React.Component {
           closingTime: '11 pm',
           openingTime: '9:30 am',
           red: '1.20',
-          blue: '2.10',
+          blue: '2.25',
           yellow: '2.60',
-          green: '3.10'
+          green: '3.20'
         },
         {
           name: 'Sushi Chiyo',
@@ -37,19 +37,19 @@ class App extends React.Component {
           closingTime: '11 pm',
           openingTime: '9:30 am',
           red: '1.20',
-          blue: '2.10',
+          blue: '2.20',
           yellow: '2.60',
-          purple: '3.10'
+          purple: '3.35'
         },
         {
           name: 'Sushi Sapporo',
           location: '9738 SE Washington St ste m',
           closingTime: '11 pm',
           openingTime: '9:30 am',
-          red: '1.20',
-          blue: '2.10',
+          red: '1.50',
+          blue: '2.15',
           yellow: '2.60',
-          green: '3.10'
+          green: '3.65'
         }
       ]
     };
