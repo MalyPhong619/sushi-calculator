@@ -10,7 +10,8 @@ function Display(props){
           .displayNames{
             text-transform: uppercase;
             text-decoration: none;
-            color: red;
+            color: black;
+            font-family: 'Bungee', cursive;
           }
 
 

@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from './../assets/images/logo.png'
 
 function Header(){
   return(
     <div>
-      <h1>Sushi Go Around Calculator</h1>
+      <img src={logo}></img>
       <Link to='/'>Home</Link> ||
       <Link to='/calculator'>Calculator</Link>
     </div>

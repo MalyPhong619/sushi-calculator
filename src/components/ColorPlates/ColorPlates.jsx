@@ -68,7 +68,7 @@ function ColorPlates(props) {
           }
           `}
         </style>
-        <h2>Color Plates:</h2>
+        <h2>Plates:</h2>
         {Object.keys(props.restaurant.colorPlates).map((plate, index) => {
           let currentPlate = props.restaurant.colorPlates[plate];
           let plateClicks = 0;
