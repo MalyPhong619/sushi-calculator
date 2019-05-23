@@ -6,9 +6,18 @@ function Display(props){
 
   return(
     <div>
+      <style jsx>{`
+          .displayNames{
+            text-transform: uppercase;
+            text-decoration: none;
+            color: red;
+          }
+
+
+      `}</style>
       {props.restaurantList.map((post, index) =>
         <h1 onClick={() => props.onHandleSelectingRestaurant(post)}
-          key={index}> <Link to='/calculator'>{post.name}</Link></h1>
+          key={index}> <Link to='/calculator' className='displayNames'>{post.name}</Link></h1>
       )}
     </div>
   )

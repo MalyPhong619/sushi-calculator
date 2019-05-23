@@ -26,7 +26,7 @@ class App extends React.Component {
           location: '1422 Northeast Broadway',
           closingTime: '11 pm',
           openingTime: '9:30 am',
-          red: '1.20',
+          hotpink: '1.20',
           blue: '2.25',
           yellow: '2.60',
           green: '3.20'
@@ -37,7 +37,7 @@ class App extends React.Component {
           closingTime: '11 pm',
           openingTime: '9:30 am',
           red: '1.20',
-          blue: '2.20',
+          pink: '2.20',
           yellow: '2.60',
           purple: '3.35'
         },
@@ -47,7 +47,7 @@ class App extends React.Component {
           closingTime: '11 pm',
           openingTime: '9:30 am',
           red: '1.50',
-          blue: '2.15',
+          orange: '2.15',
           yellow: '2.60',
           green: '3.65'
         }
@@ -71,7 +71,9 @@ class App extends React.Component {
         yellow: props.yellow,
         green: props.green,
         orange: props.orange,
-        purple: props.purple
+        purple: props.purple,
+        pink: props.pink,
+        hotpink: props.hotpink
       }
     })
   }
