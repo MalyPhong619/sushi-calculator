@@ -75,24 +75,30 @@ function ColorPlates(props) {
 
           function addPlates() {
             plateClicks++
-            let currentPlatePrice = parseFloat(currentPlate)
-            let sushitototal = currentPlatePrice * plateClicks
+            let sushitototal = currentPlate * plateClicks
 
             props.information(sushitototal)
           }
 
+          function subtractPlates() {
+            plateClicks--
+            let minusSushiTotal = currentPlate * plateClicks
+
+            props.information(minusSushiTotal)
+
+          }
+
 
           if(currentPlate){
-            let plateClicks;
             return <div key={index} className='plate'>
               <h2 className='platePrice'>$ {currentPlate}</h2>
               <div style={{backgroundColor: plate}} className='outerPlate'>
-                <button className='buttonStyle' value='-'>-</button>
+                <button onClick={subtractPlates} className='buttonStyle' value='-'>-</button>
                 <div className='innerPlate'>
                   <input className='plateTotal'
                     type='text'
                     id={plate}
-                    placeholder={plateClicks}></input>
+                    ></input>
                 </div>
                 <button onClick={addPlates} className='buttonStyle' value='+'>+</button>
               </div>

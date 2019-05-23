@@ -77,12 +77,13 @@ class App extends React.Component {
   }
 
   newNumber(num){
-    console.log(parseFloat(num))
-    let newnum = this.state.restaurantTotal += parseFloat(num)
+    let newnum = this.state.restaurantTotal += num
     this.setState({
       restaurantTotal: newnum
     })
   }
+
+
   render(){
     return (
       <div className="App">
