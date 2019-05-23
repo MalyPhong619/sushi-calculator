@@ -22,6 +22,36 @@ class App extends React.Component {
           orange: '3.30'
         },
         {
+          name: 'Fujiama Sushi Bar',
+          location: '10308 SE Washington St',
+          closingTime: '9 pm',
+          openingTime: '11 am',
+          red: '1.15',
+          blue: '2.10',
+          yellow: '2.60',
+          orange: '3.30'
+        },
+        {
+          name: 'Sushi Village',
+          location: 'NE 181st Ave',
+          closingTime: '10 pm',
+          openingTime: '11 am',
+          red: '1.15',
+          blue: '2.10',
+          yellow: '2.60',
+          orange: '3.30'
+        },
+        {
+          name: 'Hot Pot \'N Sushi',
+          location: '10127 NE Cascades Pkwy',
+          closingTime: '9 pm',
+          openingTime: '11 am',
+          red: '1.15',
+          blue: '2.10',
+          yellow: '2.60',
+          orange: '3.30'
+        },
+        {
           name: 'Sushi Ohana',
           location: '1422 Northeast Broadway',
           closingTime: '11 pm',
@@ -40,6 +70,56 @@ class App extends React.Component {
           pink: '2.20',
           yellow: '2.60',
           purple: '3.35'
+        },
+        {
+          name: 'Sushi Sushi',
+          location: '5432 SE 82nd Ave',
+          closingTime: '9 pm',
+          openingTime: '11 am',
+          orange: '1.20',
+          pink: '2.20',
+          yellow: '2.60',
+          purple: '3.35'
+        },
+        {
+          name: '98 Degree Sushi',
+          location: '8230 SE Harrison St #310',
+          closingTime: '9:30 pm',
+          openingTime: '11 am',
+          orange: '1.20',
+          pink: '2.20',
+          yellow: '2.60',
+          purple: '3.35'
+        },
+        {
+          name: 'O\'Sushi',
+          location: '2850 SE 82nd Ave',
+          closingTime: '9 pm',
+          openingTime: '11:45 am',
+          orange: '1.20',
+          pink: '2.20',
+          red: '2.60',
+          green: '3.35'
+        },
+        {
+          name: 'Sushi Takashi',
+          location: '2415 SW 5th Ave',
+          closingTime: '9 pm',
+          openingTime: '11 am',
+          orange: '1.20',
+          pink: '2.20',
+          yellow: '2.60',
+          blue: '3.35'
+        },
+        {
+          name: 'Sensei Sushi',
+          location: '710 SW 2nd Ave',
+          closingTime: '9 pm',
+          openingTime: '11 am',
+          orange: '1.20',
+          pink: '2.20',
+          yellow: '2.60',
+          blue: '3.35'
         },
         {
           name: 'Sushi Sapporo',

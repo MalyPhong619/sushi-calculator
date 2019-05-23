@@ -76,14 +76,12 @@ function ColorPlates(props) {
           function addPlates() {
             plateClicks++
             let sushitototal = currentPlate * plateClicks
-
             props.information(sushitototal)
           }
 
           function subtractPlates() {
             plateClicks--
             let minusSushiTotal = currentPlate * plateClicks
-
             props.information(minusSushiTotal)
 
           }
