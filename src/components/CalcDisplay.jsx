@@ -4,6 +4,7 @@ import UserInformation from './UserInformation';
 import styled from 'styled-components';
 
 function CalcDisplay(props){
+  console.log(props)
   const MainCalcDiv = styled.div`
   display: flex;
   flex-flow: row nowrap;
@@ -11,7 +12,7 @@ function CalcDisplay(props){
   `
   return(
     <MainCalcDiv>
-      <ColorPlates restaurant={props.restaurant} />
+      <ColorPlates information={props.information} restaurant={props.restaurant} />
       <UserInformation restaurant={props.restaurant}/>
     </MainCalcDiv>
   );

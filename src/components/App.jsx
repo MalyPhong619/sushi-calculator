@@ -51,13 +51,15 @@ class App extends React.Component {
           yellow: '2.60',
           green: '3.65'
         }
-      ]
+      ],
+      currentPlace: {}
     };
     this.handleSelectingRestaurant = this.handleSelectingRestaurant.bind(this);
+    this.newNumber = this.newNumber.bind(this)
   }
 
   handleSelectingRestaurant(props) {
-    this.setState = {
+    this.setState({
       name: props.name,
       location: props.location,
       closingTime: props.closingTime,
@@ -71,10 +73,16 @@ class App extends React.Component {
         orange: props.orange,
         purple: props.purple
       }
-    }
+    })
   }
 
-
+  newNumber(num){
+    console.log(parseFloat(num))
+    let newnum = this.state.restaurantTotal += parseFloat(num)
+    this.setState({
+      restaurantTotal: newnum
+    })
+  }
   render(){
     return (
       <div className="App">
@@ -84,7 +92,8 @@ class App extends React.Component {
             render={()=><Display restaurantList={this.state.masterRestaurantList} onHandleSelectingRestaurant={this.handleSelectingRestaurant} />} />
           <Route exact path='/calculator'
             render={()=><CalcDisplay
-              restaurant={this.setState} />} />
+              information={this.newNumber}
+              restaurant={this.state} />} />
             <Route component={Error404}/>
           </Switch>
         </div>

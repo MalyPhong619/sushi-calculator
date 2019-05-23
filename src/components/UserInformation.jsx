@@ -12,7 +12,7 @@ function UserInformation(props) {
       <h2>{props.restaurant.location}</h2>
       <h3>Hours of operation: {props.restaurant.openingTime} - {props.restaurant.closingTime}</h3>
       <h1>Calculated Total:</h1>
-      <h1>{props.restaurant.restaurantTotal}</h1>
+      <h1>{parseFloat(props.restaurant.restaurantTotal).toFixed(2)}</h1>
     </form>
   )
 }
