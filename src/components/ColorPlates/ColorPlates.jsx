@@ -72,14 +72,13 @@ function ColorPlates(props) {
         {Object.keys(props.restaurant.colorPlates).map((plate, index) => {
           let currentPlate = props.restaurant.colorPlates[plate];
           let plateClicks = 0;
-          let sushitototal;
 
-          function addPlates(currenPlate) {
+          function addPlates() {
             plateClicks++
             let currentPlatePrice = parseFloat(currentPlate)
-            sushitototal = currentPlatePrice * plateClicks
-            console.log(plate, plateClicks,"fuck this: ", parseFloat(props.restaurant.restaurantTotal).toFixed(2));
-            props.information(parseFloat(sushitototal).toFixed(2))
+            let sushitototal = currentPlatePrice * plateClicks
+
+            props.information(sushitototal)
           }
 
 
